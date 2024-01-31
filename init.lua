@@ -31,6 +31,8 @@ require('lazy').setup({
     require 'lazy.dashboard.hyper',
     -- lsp config
     require 'lazy.lsp.mason',
+    require 'lazy.lsp.null_ls',
+    require 'lazy.lsp.mason-null',
     -- lua line
     require 'lazy.lualine.lualine',
     -- auto complete
