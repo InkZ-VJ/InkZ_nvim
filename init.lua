@@ -1,10 +1,10 @@
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
-vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
+-- keymap
+require('setting.keymap')
 -- template setup
 require('setting.template')
-
 -- remap for colemak Users
 require('colemak')
 
@@ -26,13 +26,12 @@ vim.opt.rtp:prepend(lazypath)
 
 require('lazy').setup({
     -- theme setup
-    require 'lazy.theme.rosepine',
+    require 'lazy.theme.nightfox',
     -- Dashboard
     require 'lazy.dashboard.hyper',
     -- lsp config
     require 'lazy.lsp.mason',
     require 'lazy.lsp.null_ls',
-    require 'lazy.lsp.mason-null',
     -- lua line
     require 'lazy.lualine.lualine',
     -- auto complete
@@ -43,6 +42,8 @@ require('lazy').setup({
     require 'lazy.fuzzyFinder.fzf',
     -- treesitter
     require 'lazy.treesitter.treesitter',
+    -- barbar
+    require 'lazy.barbar.barbar',
 })
 
 -- [[Setting Option]]
@@ -57,6 +58,8 @@ require('setting.treesitter')
 require('setting.lsp')
 -- cmp
 require('setting.cmp')
+-- barbar
+require('setting.barbar')
 
 
 

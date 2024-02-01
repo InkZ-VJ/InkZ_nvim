@@ -14,8 +14,6 @@ local function map(mode, lhs, rhs, opts)
   map("", "k", "n", {})
   map("", "l", "i", {})
   map("", "K", "N", {})
-  map("", "N", "5j", {})
-  map("", "E", "5k", {})
   map("", "L", "I", {})
   
   map("", "H", "0", {})
