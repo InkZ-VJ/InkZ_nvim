@@ -29,6 +29,8 @@ require('lazy').setup({
     require 'lazy.theme.nightfox',
     -- Dashboard
     require 'lazy.dashboard.hyper',
+    -- auto format
+    require 'lazy.autoformat.format',
     -- lsp config
     require 'lazy.lsp.mason',
     require 'lazy.lsp.null_ls',
@@ -60,6 +62,8 @@ require('setting.lsp')
 require('setting.cmp')
 -- barbar
 require('setting.barbar')
+
+
 
 
 

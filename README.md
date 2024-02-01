@@ -1,4 +1,20 @@
-Nvim Colemak
+Nvim Config inspired by [Kickstart neovim](https://github.com/nvim-lua/kickstart.nvim)
+
+* New neovim users
+* Colemak users
+
+>**INSTALLATION**
+
+removed old config
+```bash
+rm -rf nvim
+rm -rf ~/.local/share/nvim
+```
+
+installed 
+```bash
+git clone https://github.com/VatJittiprasert/InkZ_nvim.git ~/.config/nvim
+```
 
 >**List of Plugins**
 
@@ -9,6 +25,13 @@ Nvim Colemak
 * Files Expore : [Fuzzy Finder](), [BarBar]()
 * auto-complete : [Nvim-cmp](), [Null-ls]()
 * LSP : [Mason]()
+
+>**CHANGE THEME**
+
+you can change theme by 
+
+1. add file in `lazy/theme/${themeName}.lua` then add installation to file. You can see example in others theme that I already installed
+2. change theme by change lazy section in `init.lua` from `'lazy.theme.nightfox'` to `lazy.theme.${themeName}`
 
 >**COLEMAK REMAP**
 
@@ -25,12 +48,12 @@ Nvim Colemak
 |`L`|`I`|switch to insert mode at begin line|
 |`H`|`0`|Move to first char of line|
 |`I`|`$`|Move to end line|
-
+---
 **Caution** remap your vim motion to new one
 
-#### Ex
- * `ci(` to `cl(` : erase every thing in `( )` 
- *  `vi{` to `vl{` : switch to visual mode and select all in `{ }` 
+### Ex
+ * `ci(` to `cl(` : erase every thing in `( )` and switch to insert mode
+ * `vi{` to `vl{` : switch to visual mode and select all in `{ }` 
  * ...
 
 
