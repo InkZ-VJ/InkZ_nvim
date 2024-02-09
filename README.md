@@ -103,5 +103,11 @@ if err != nil {
     return err
 }
 ```
+`␣`EE : auto type err handling
+```go
+if err != nil {
+    log.Fatal(err)
+}
+```
 
 

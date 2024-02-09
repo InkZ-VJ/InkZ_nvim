@@ -4,7 +4,6 @@ vim.opt.hlsearch = false
 vim.opt.incsearch = true
 vim.opt.termguicolors = true
 vim.opt.scrolloff = 8
-vim.opt.colorcolumn = "80"
 
 -- Set highlight on search
 vim.o.hlsearch = false

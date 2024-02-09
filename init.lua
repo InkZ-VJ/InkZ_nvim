@@ -25,36 +25,45 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require('lazy').setup({
-    -- theme setup
-    require 'lazy.theme.nightfox',
-    -- Dashboard
-    require 'lazy.dashboard.hyper',
-    -- auto format
-    require 'lazy.autoformat.format',
-    -- lsp config
-    require 'lazy.lsp.mason',
-    require 'lazy.lsp.null_ls',
-    -- lua line
-    require 'lazy.lualine.lualine',
-    -- auto complete
-    require 'lazy.autocomplete.cmp',
-    -- auto pair
-    require 'lazy.autocomplete.pair',
-    -- Fuzzy Finder
-    require 'lazy.fuzzyFinder.fzf',
-    -- treesitter
-    require 'lazy.treesitter.treesitter',
-    -- barbar
-    require 'lazy.barbar.barbar',
+  -- theme setup
+  require 'lazy.theme.nightfox',
+  require 'lazy.theme.catppucin',
+  require 'lazy.theme.rosepine',
+  -- Dashboard
+  require 'lazy.dashboard.hyper',
+  -- auto format
+  require 'lazy.autoformat.format',
+  -- lsp config
+  require 'lazy.lsp.mason',
+  require 'lazy.lsp.null_ls',
+  -- lua line
+  require 'lazy.lualine.lualine',
+  -- auto complete
+  require 'lazy.autocomplete.cmp',
+  -- auto pair
+  require 'lazy.autocomplete.pair',
+  -- Fuzzy Finder
+  require 'lazy.fuzzyFinder.fzf',
+  -- treesitter
+  require 'lazy.treesitter.treesitter',
+  -- barbar
+  require 'lazy.barbar.barbar',
+  -- cmdline
+  require 'lazy.cmdline.cmdline',
+  --nvim-tree
+  --require 'lazy.barbar.nvimtree',
 })
 
 -- [[Setting Option]]
 
+--theme
+require("setting.theme")
+vim.cmd [[colorscheme catppuccin-latte]]
 -- diagnostic
 require('setting.diagnostic')
 -- Telescope setup
 require('setting.telescope')
--- Treesitter 
+-- Treesitter
 require('setting.treesitter')
 -- LSP
 require('setting.lsp')
@@ -62,8 +71,7 @@ require('setting.lsp')
 require('setting.cmp')
 -- barbar
 require('setting.barbar')
-
-
-
-
-
+--cmdline
+require('setting.cmdline')
+--nivm-tree
+--require('setting.nvimtree')
