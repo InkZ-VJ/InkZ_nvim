@@ -22,6 +22,7 @@ if not vim.loop.fs_stat(lazypath) then
   }
 end
 
+
 vim.opt.rtp:prepend(lazypath)
 
 require('lazy').setup({
@@ -42,23 +43,24 @@ require('lazy').setup({
   require 'lazy.autocomplete.cmp',
   -- auto pair
   require 'lazy.autocomplete.pair',
+  -- auto close tag
+  require 'lazy.autocomplete.tag',
   -- Fuzzy Finder
   require 'lazy.fuzzyFinder.fzf',
   -- treesitter
   require 'lazy.treesitter.treesitter',
   -- barbar
-  require 'lazy.barbar.barbar',
+  --require 'lazy.barbar.barbar',
+  -- nivm tree
+  --require 'lazy.barbar.nvimtree',
   -- cmdline
   require 'lazy.cmdline.cmdline',
-  --nvim-tree
-  --require 'lazy.barbar.nvimtree',
+  -- harpoon2
+  require 'lazy.harpoon.harpoon',
 })
 
 -- [[Setting Option]]
 
---theme
-require("setting.theme")
-vim.cmd [[colorscheme catppuccin-latte]]
 -- diagnostic
 require('setting.diagnostic')
 -- Telescope setup
@@ -70,8 +72,11 @@ require('setting.lsp')
 -- cmp
 require('setting.cmp')
 -- barbar
-require('setting.barbar')
+--require('setting.barbar')
+-- harpoon2
+require('setting.harpoon')
 --cmdline
 require('setting.cmdline')
---nivm-tree
---require('setting.nvimtree')
+--theme
+require("setting.theme")
+vim.cmd [[colorscheme rose-pine]]

@@ -46,7 +46,7 @@ require("catppuccin").setup({
 })
 
 require("rose-pine").setup({
-  variant = "dawn",      -- auto, main, moon, or dawn
+  variant = "moon",      -- auto, main, moon, or dawn
   dark_variant = "moon", -- main, moon, or dawn
   dim_inactive_windows = false,
   extend_background_behind_borders = true,
@@ -132,9 +132,9 @@ require('nightfox').setup({
     },
     styles = {           -- Style to be applied to different syntax groups
       comments = "NONE", -- Value is any valid attr-list value `:help attr-list`
-      conditionals = "NONE",
-      constants = "NONE",
-      functions = "NONE",
+      conditionals = "bold",
+      constants = "bold",
+      functions = "italic,bold",
       keywords = "NONE",
       numbers = "NONE",
       operators = "NONE",
@@ -142,16 +142,34 @@ require('nightfox').setup({
       types = "NONE",
       variables = "NONE",
     },
-    inverse = { -- Inverse highlight for different types
-      match_paren = false,
-      visual = false,
-      search = false,
-    },
     modules = { -- List of various plugins and additional options
-      -- ...
+      cmp = true,
+      gitsigns = true,
+      nvimtree = true,
+      treesitter = true,
+      notify = false,
+      barbar = true,
+
     },
   },
-  palettes = {},
+  palettes = {
+    all = {
+      -- Eacch palette defines these colors:
+      --   black, red, green, yellow, blue, magenta, cyan, white, orange, pink
+      --
+      -- These colors have 3 shades: base, bright, and dim
+      --
+      -- Defining just a color defines it's base color
+      red = "#ff1160",
+      green = '#00FFD1',
+      yellow = '#F6FA70',
+      blue = { base = '#0079ff', bright = '#DCF2F1', dim = '#3559E0' },
+      cyan = '#2D9596',
+      orange = '#ffac3e',
+      white = { base = '#ffffff', bright = '#ffffff', dim = '#E1D7C6' },
+      magenta = '#8E05C2'
+    },
+  },
   specs = {},
   groups = {},
 })
