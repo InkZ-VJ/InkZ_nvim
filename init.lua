@@ -49,10 +49,6 @@ require('lazy').setup({
     require 'lazy.fuzzyFinder.fzf',
     -- treesitter
     require 'lazy.treesitter.treesitter',
-    -- barbar
-    --require 'lazy.barbar.barbar',
-    -- nivm tree
-    --require 'lazy.barbar.nvimtree',
     -- cmdline
     require 'lazy.cmdline.cmdline',
     -- harpoon2
@@ -71,8 +67,6 @@ require('setting.treesitter')
 require('setting.lsp')
 -- cmp
 require('setting.cmp')
--- barbar
---require('setting.barbar')
 -- harpoon2
 require('setting.harpoon')
 --cmdline

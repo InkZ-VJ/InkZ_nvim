@@ -78,24 +78,20 @@ you can change theme by
 |`␣`sG|[S]earch by [G]rep on Git Root|
 |`␣`sd|[S]earch [D]iagnostics|
 |`␣`sr|[S]earch [R]esume|
+|`␣`dd|[D]efinitions|
+|`␣`pp|[P]revious file|
 
->**BARBAR**
-
-|Key|Description|
-|----|----|
-|`Alt`+`,`|Move previous tab|
-|`Alt`+`.`|Move next tab|
-|||
-|`Alt`+`<`|reorder tab to before|
-|`Alt`+`>`|reorder tab to next|
-|||
-|`Alt`+`$number`|go to tab `$number`|
-|||
-|`Alt`+`p`|unpin tab|
-|`Alt`+`c`|close tab|
+>** Harpoon
+This keymap are suit with my personal layout(Colemak). you can change keymap to hjkl for qwerty
+|Key|Definition|
+|`␣`a|Pin current file to Harpoon|
+|<C-o>|Open Harpoon Dashboard|
+|<C-h>|Move to index 0 in Harpoon Dashboard|
+|<C-n>|Move to index 1 in Harpoon Dashboard|
+|<C-e>|Move to index 2 in Harpoon Dashboard|
+|<C-i>|Move to index 3 in Harpoon Dashboard|
 
 >**Golang Ultimate Key**
-
 
 `␣`ee : auto type err handling
 ```go
@@ -103,11 +99,4 @@ if err != nil {
     return err
 }
 ```
-`␣`EE : auto type err handling
-```go
-if err != nil {
-    log.Fatal(err)
-}
-```
-
 
