@@ -28,7 +28,6 @@ vim.opt.rtp:prepend(lazypath)
 require('lazy').setup({
     -- theme setup
     require 'lazy.theme.nightfox',
-    require 'lazy.theme.catppucin',
     require 'lazy.theme.rosepine',
     -- Dashboard
     require 'lazy.dashboard.hyper',

@@ -19,10 +19,10 @@ git clone https://github.com/VatJittiprasert/InkZ_nvim.git ~/.config/nvim
 >**List of Plugins**
 
 * quality of life : [Auto-pair](), [Lua-line](https://github.com/nvim-lualine/lualine.nvim)
-* theme : [NightFox(default)](https://github.com/EdenEast/nightfox.nvim), [Rosepine](https://github.com/rose-pine/neovim), [Tokyonight](https://github.com/folke/tokyonight.nvim)
+* theme : [NightFox(default)](https://github.com/EdenEast/nightfox.nvim), [Rosepine(main)](https://github.com/rose-pine/neovim)
 * Colorized : [Treesitter]()
 * Dashboard : [Hyper]()
-* Files Expore : [Fuzzy Finder](), [BarBar]()
+* Files Expore : [Fuzzy Finder](), [Harpoon]()
 * auto-complete : [Nvim-cmp](), [Null-ls]()
 * LSP : [Mason]()
 
@@ -81,15 +81,17 @@ you can change theme by
 |`␣`dd|[D]efinitions|
 |`␣`pp|[P]revious file|
 
->** Harpoon
+>**Harpoon**
+
 This keymap are suit with my personal layout(Colemak). you can change keymap to hjkl for qwerty
 |Key|Definition|
+|----|----|
 |`␣`a|Pin current file to Harpoon|
-|<C-o>|Open Harpoon Dashboard|
-|<C-h>|Move to index 0 in Harpoon Dashboard|
-|<C-n>|Move to index 1 in Harpoon Dashboard|
-|<C-e>|Move to index 2 in Harpoon Dashboard|
-|<C-i>|Move to index 3 in Harpoon Dashboard|
+|`Ctrl`+`o`|Open Harpoon Dashboard|
+|`Ctrl`+`h`|Move to index 0 in Harpoon Dashboard|
+|`Ctrl`+`n`|Move to index 1 in Harpoon Dashboard|
+|`Ctrl`+`e`|Move to index 2 in Harpoon Dashboard|
+|`Ctrl`+`i`|Move to index 3 in Harpoon Dashboard|
 
 >**Golang Ultimate Key**
 
