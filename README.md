@@ -25,6 +25,7 @@ git clone https://github.com/VatJittiprasert/InkZ_nvim.git ~/.config/nvim
 * Files Expore : [Fuzzy Finder](), [Harpoon]()
 * auto-complete : [Nvim-cmp](), [Null-ls]()
 * LSP : [Mason]()
+* Formatter : [Prettier]()
 
 >**CHANGE THEME**
 
@@ -80,6 +81,7 @@ you can change theme by
 |`␣`sr|[S]earch [R]esume|
 |`␣`dd|[D]efinitions|
 |`␣`pp|[P]revious file|
+|`␣`ff|[F]ormat with Prittier|
 
 >**Harpoon**
 
