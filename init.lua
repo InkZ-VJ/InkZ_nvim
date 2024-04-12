@@ -53,8 +53,6 @@ require('lazy').setup({
     require 'lazy.cmdline.cmdline',
     -- harpoon2
     require 'lazy.harpoon.harpoon',
-    --barbar
-    require 'lazy.barbar.barbar',
 })
 
 -- [[Setting Option]]
@@ -71,10 +69,9 @@ require('setting.lsp')
 require('setting.cmp')
 -- harpoon2
 require('setting.harpoon')
--- barbar
-require('setting.barbar')
 --cmdline
 require('setting.cmdline')
 --theme
 require("setting.theme")
+require("setting.prettier")
 vim.cmd [[colorscheme rose-pine]]
