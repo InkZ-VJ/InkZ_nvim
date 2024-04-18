@@ -53,6 +53,8 @@ require('lazy').setup({
     require 'lazy.cmdline.cmdline',
     -- harpoon2
     require 'lazy.harpoon.harpoon',
+    -- nvim tree
+    require 'lazy.fileExplore.nvimtree',
 })
 
 -- [[Setting Option]]
@@ -74,4 +76,6 @@ require('setting.cmdline')
 --theme
 require("setting.theme")
 require("setting.prettier")
+require("setting.nvimtree")
+
 vim.cmd [[colorscheme rose-pine]]
