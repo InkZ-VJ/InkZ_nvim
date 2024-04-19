@@ -55,6 +55,8 @@ require('lazy').setup({
     require 'lazy.harpoon.harpoon',
     -- nvim tree
     require 'lazy.fileExplore.nvimtree',
+    -- comment 
+    require 'lazy.comment.comment',
 })
 
 -- [[Setting Option]]
