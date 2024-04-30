@@ -15,6 +15,9 @@ prettier.setup({
         "typescript",
         "typescriptreact",
         "yaml",
+        "tmpl",
+        "templ",
+        "proto",
     },
     cli_options = {
         arrow_parens = "always",
@@ -23,7 +26,6 @@ prettier.setup({
         embedded_language_formatting = "auto",
         end_of_line = "lf",
         html_whitespace_sensitivity = "css",
-        -- jsx_bracket_same_line = false,
         jsx_single_quote = false,
         print_width = 80,
         prose_wrap = "preserve",
@@ -38,4 +40,4 @@ prettier.setup({
     },
 })
 
-vim.api.nvim_set_keymap('n', '<leader>ff', ':Prettier<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<leader>fp', ':Prettier<CR>', { noremap = true, silent = true })

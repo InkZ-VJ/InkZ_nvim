@@ -53,6 +53,10 @@ require('lazy').setup({
     require 'lazy.cmdline.cmdline',
     -- harpoon2
     require 'lazy.harpoon.harpoon',
+    -- comment
+    require 'lazy.comment.comment',
+    --icon
+    require 'lazy.icon.trouble',
 })
 
 -- [[Setting Option]]
