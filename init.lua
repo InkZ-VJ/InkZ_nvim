@@ -30,7 +30,7 @@ require('lazy').setup({
     require 'lazy.theme.nightfox',
     require 'lazy.theme.rosepine',
     -- Dashboard
-    require 'lazy.dashboard.hyper',
+    -- require 'lazy.dashboard.hyper',
     -- auto format
     require 'lazy.autoformat.format',
     require 'lazy.autoformat.prettier',
@@ -78,4 +78,5 @@ require('setting.cmdline')
 --theme
 require("setting.theme")
 require("setting.prettier")
+
 vim.cmd [[colorscheme rose-pine]]

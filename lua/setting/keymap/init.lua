@@ -1,5 +1,5 @@
 -- Explore File
-vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
+vim.keymap.set("n", "<leader>nt", vim.cmd.Ex)
 
 vim.keymap.set("n", "<leader>ee",
     "oif err != nil {<CR>}<ESC>O return err<ESC>")
