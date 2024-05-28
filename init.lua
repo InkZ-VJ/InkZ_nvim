@@ -78,9 +78,5 @@ require('setting.cmdline')
 --theme
 require("setting.theme")
 require("setting.prettier")
-<<<<<<< HEAD
-=======
-require("setting.nvimtree")
->>>>>>> 89fa64fc30bafcbfeee52cdaba1afa0afe0dfe01
 
 vim.cmd [[colorscheme rose-pine]]
