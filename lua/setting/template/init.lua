@@ -5,7 +5,7 @@ vim.opt.incsearch = true
 vim.opt.termguicolors = true
 vim.opt.scrolloff = 8
 
-vim.g.netrw_liststyle = 3
+vim.g.netrw_liststyle = 0
 
 vim.filetype.add({ extension = { templ = "templ" } })
 
