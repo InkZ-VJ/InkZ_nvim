@@ -5,6 +5,8 @@ vim.opt.incsearch = true
 vim.opt.termguicolors = true
 vim.opt.scrolloff = 8
 
+vim.g.netrw_liststyle = 3
+
 vim.filetype.add({ extension = { templ = "templ" } })
 
 -- Set highlight on search
@@ -30,10 +32,6 @@ vim.o.tabstop = 4
 vim.diagnostic.config({
     virtual_text = false
 })
-
--- Show line diagnostics automatically in hover window
-vim.o.updatetime = 250
-vim.cmd [[autocmd CursorHold,CursorHoldI * lua vim.diagnostic.open_float(nil, {focus=false})]]
 
 -- Save undo history
 vim.o.undofile = true

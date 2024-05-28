@@ -10,11 +10,19 @@ require("rose-pine").setup({
         migrations = true,    -- Handle deprecated options automatically
     },
 
+<<<<<<< HEAD
     styles = {
         bold = false,
         italic = false,
         transparency = true,
     },
+=======
+  styles = {
+    bold = false,
+    italic = false,
+    transparency = true,
+  },
+>>>>>>> 89fa64fc30bafcbfeee52cdaba1afa0afe0dfe01
 
     groups = {
         border = "muted",
