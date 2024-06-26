@@ -29,14 +29,17 @@ require('lazy').setup({
     -- theme setup
     require 'lazy.theme.nightfox',
     require 'lazy.theme.rosepine',
+    require 'lazy.theme.nightfly',
+    require 'lazy.theme.catppucin',
     -- Dashboard
     -- require 'lazy.dashboard.hyper',
     -- auto format
     require 'lazy.autoformat.format',
-    require 'lazy.autoformat.prettier',
+    -- require 'lazy.autoformat.prettier',
     -- lsp config
     require 'lazy.lsp.mason',
     require 'lazy.lsp.null_ls',
+    require 'lazy.lsp.go',
     -- lua line
     require 'lazy.lualine.lualine',
     -- auto complete
@@ -57,6 +60,8 @@ require('lazy').setup({
     require 'lazy.comment.comment',
     --icon
     require 'lazy.icon.trouble',
+
+    -- require('lazy.fileExplore.nvimtree')
 })
 
 -- [[Setting Option]]
@@ -77,6 +82,8 @@ require('setting.harpoon')
 require('setting.cmdline')
 --theme
 require("setting.theme")
-require("setting.prettier")
+-- require("setting.nvimtree")
+-- require("setting.prettier")
 
-vim.cmd [[colorscheme rose-pine]]
+
+vim.cmd [[colorscheme catppuccin-mocha]]

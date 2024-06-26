@@ -3,6 +3,15 @@
 -- Defer Treesitter setup after first render to improve startup time of 'nvim {filename}'
 vim.defer_fn(function()
     require('nvim-treesitter.configs').setup {
+        -- rainbow = {
+        --     enable = true,
+        --     -- list of languages you want to disable the plugin for
+        --     disable = { 'jsx', 'cpp' },
+        --     -- Which query to use for finding delimiters
+        --     query = 'rainbow-parens',
+        --     -- Highlight the entire buffer all at once
+        --     strategy = require('ts-rainbow').strategy.global,
+        -- },
         -- Add languages to be installed here that you want installed for treesitter
         ensure_installed = { 'go', 'lua', 'python', 'rust', 'tsx', 'javascript', 'typescript', 'bash', 'html', 'dockerfile', 'templ', 'solidity', 'yaml', 'tmux', 'proto', 'css', 'fish', 'sql', 'solidity' },
         -- Autoinstall languages that are not installed. Defaults to false (but you can change for yourself!)
@@ -85,3 +94,28 @@ vim.defer_fn(function()
         },
     }
 end, 0)
+
+local rainbow_delimiters = require 'rainbow-delimiters'
+require('rainbow-delimiters.setup').setup {
+    strategy = {
+        [''] = rainbow_delimiters.strategy['global'],
+        vim = rainbow_delimiters.strategy['local'],
+    },
+    query = {
+        [''] = 'rainbow-delimiters',
+        lua = 'rainbow-blocks',
+    },
+    priority = {
+        [''] = 110,
+        lua = 210,
+    },
+    highlight = {
+        'RainbowDelimiterRed',
+        'RainbowDelimiterYellow',
+        'RainbowDelimiterBlue',
+        'RainbowDelimiterOrange',
+        'RainbowDelimiterGreen',
+        'RainbowDelimiterViolet',
+        'RainbowDelimiterCyan',
+    },
+}
